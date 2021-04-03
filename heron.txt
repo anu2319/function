@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+ double a,b,c,d,f;
+ double s1,s2,area1,area2,result;
+
+
+ cin>>a>>b>>c>>d>>f;
+
+ s1=((a+b+f)/2);
+ area1=(sqrt(s1*(s1-a)*(s1-b)*(s1-f)));
+
+
+ s2=((c+d+f)/2);
+ area2=(sqrt(s2*(s2-c)*(s2-d)*(s2-f)));
+
+ result=area1 + area2;
+
+ cout<<fixed<<setprecision(4)<<result<<endl;
+
+}

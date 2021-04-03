@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+
+
+using namespace std;
+
+
+int main()
+{
+ double a,b,h;;
+ double z,result;
+ cin>>a>>b>>h;
+ while(a<=b)
+ {
+   cout<<fixed<<setprecision(3)<<a;
+   result= 3 *(sin(a));
+   cout<<fixed<<setprecision(3)<<" "<<result<<endl;
+   a=a+h;
+ }
+
+ return 0;
+
+}

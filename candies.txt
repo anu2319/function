@@ -1,0 +1,12 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+ int main()
+ {
+   int a,b,result;
+   cin>>a>>b;
+   result=max(a,b)-min(a,b);
+   cout<<result<<endl;
+
+
+ }

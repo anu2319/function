@@ -1,0 +1,39 @@
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+ vector<int>x,y;
+
+ string s1,s2;
+ cin>>s1>>s2;
+
+ stringstream ss1(s1),ss2(s2);
+
+while(ss1.good())
+{
+  string temp;
+  getline(ss1,temp,'^');
+  x.push_back (stoi(temp));
+
+}
+
+while(ss2.good())
+{
+  string temp;
+  getline(ss2,temp,'^');
+  y.push_back(stoi(temp));
+
+}
+if(x[1]*log(x[0]) > y[1]*log(y[0]))
+{
+ cout<<x[0]<<"^"<<x[1]<<endl;
+}
+else
+{
+ cout<<y[0]<<"^"<<y[1]<<endl;
+}
+return 0;
+
+}

@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+#include <math.h>
+
+
+double calculate(double x)
+{
+  double result;
+
+  result = x + sin(x);
+  return result;
+}
+
+int main()
+{
+ double x;
+ scanf("%lf",&x);
+ double ans;
+ ans=calculate(x);
+ printf("%.4f",ans);
+ return 0;
+}

@@ -1,0 +1,18 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+    int i;
+    double x[4];
+    double result[4];
+    while(cin>>x[i])
+    {
+    result[i]=0;
+    result[i] = sqrt(x[i]) + 2*(x[i]) + sin(x[i]);
+    cout<<fixed<<setprecision(4)<<result[i]<<endl;
+    }
+    return 0;
+}

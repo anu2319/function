@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+  int i;
+  double x[10];
+  double ans[10];
+  while(cin>>x[i])
+  {
+  ans[i]= (sin(x[i]) + sqrt(log(3*(x[i]))/log(4)) + ceil(3*(exp(x[i]))));
+  cout<<fixed<<setprecision(6)<<ans[i]<<endl;
+  }
+
+return 0;
+}

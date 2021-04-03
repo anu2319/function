@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cmath>
+#include<iomanip>
+
+using namespace std;
+
+int main()
+{
+
+ double x[4],y[4];
+ double result[4];
+ int i;
+ while(cin>>x[i]>>y[i])
+ {
+ result[i]= (pow(x[i],2) + sin(x[i]*y[i]) - pow(y[i],2));
+ cout<<fixed<<setprecision(4)<<result[i]<<endl;
+ }
+ return 0;
+}
